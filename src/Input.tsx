@@ -294,6 +294,7 @@ const Input = forwardRef<InputRef, InputProps>((props, ref) => {
   return (
     <BaseInput
       {...rest}
+      ref={holderRef}
       prefixCls={prefixCls}
       className={clsx(className, outOfRangeCls)}
       handleReset={handleReset}
